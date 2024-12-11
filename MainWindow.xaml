@@ -1,0 +1,73 @@
+﻿<Window x:Class="DOMINICICOMPITO.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DOMINICICOMPITO"
+        mc:Ignorable="d"
+        Title="Dominici" Height="450" Width="800">
+    <Grid Background="#FF2147C9">
+        <Button x:Name="inserisci" Content="Inserisci Dati" HorizontalAlignment="Center" Margin="28,34,568,0" VerticalAlignment="Top" Width="196" Height="61" BorderBrush="#FFB49A9A" RenderTransformOrigin="0.443,-0.905" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="Black" OpacityMask="#FF801010" Click="inserisci_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFB7FF26" Offset="0.487"/>
+                    <GradientStop Color="#FFBBEC54" Offset="1"/>
+                    <GradientStop Color="Black" Offset="0.93"/>
+                    <GradientStop Color="#FFB2F72B" Offset="0.291"/>
+                    <GradientStop Color="#FF91F500"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <ListBox x:Name="sintesi" HorizontalAlignment="Left" Height="169" Margin="505,41,0,0" VerticalAlignment="Top" Width="243" Foreground="Black" OpacityMask="#FF801010" FontWeight="Bold" Background="White"/>
+        <RadioButton x:Name="umano" Content="Umano" HorizontalAlignment="Left" Margin="37,158,0,0" VerticalAlignment="Top" OpacityMask="#FFFF0F0F" BorderBrush="#FFFF0606" Foreground="Black" FontWeight="Bold" FontFamily="Segoe UI Black" Height="27" Width="79" FontSize="16" Checked="umano_Checked"/>
+        <TextBlock HorizontalAlignment="Left" Margin="37,121,0,0" TextWrapping="Wrap" Text="Razza:" VerticalAlignment="Top" Background="#FF91F500" Width="120" Height="23" FontWeight="Bold" FontFamily="Segoe UI Black" TextAlignment="Center" Foreground="Black" OpacityMask="#FF801010" FontSize="14" TextDecorations="Underline"/>
+        <RadioButton x:Name="mutante" Content="Mutante" HorizontalAlignment="Left" Margin="37,186,0,0" VerticalAlignment="Top" OpacityMask="#FFFF0F0F" BorderBrush="#FFFF0606" Foreground="Black" FontWeight="Bold" FontFamily="Segoe UI Black"  Height="27" Width="92" FontSize="16" Checked="mutante_Checked"/>
+        <TextBlock x:Name="prezzo" HorizontalAlignment="Left" Margin="433,369,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Background="White" Text=""/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="193,121,0,0" TextWrapping="Wrap" Text="Anni:" VerticalAlignment="Top" Background="#FF91F500" Width="120" Height="23" FontWeight="Bold" FontFamily="Segoe UI Black" TextAlignment="Center" Foreground="Black" OpacityMask="#FF801010" FontSize="14" TextDecorations="Underline"/>
+        <TextBlock HorizontalAlignment="Left" Margin="193,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FF91F500" Width="120" Height="23" FontWeight="Bold" FontFamily="Segoe UI Black" TextAlignment="Center" Foreground="Black" OpacityMask="#FF801010" FontSize="14" TextDecorations="Underline" Text="Nome"/>
+        <TextBlock HorizontalAlignment="Left" Margin="193,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FF91F500" Width="120" Height="23" FontWeight="Bold" FontFamily="Segoe UI Black" TextAlignment="Center" Foreground="Black" OpacityMask="#FF801010" FontSize="14" TextDecorations="Underline" Text="Altezza"/>
+        <TextBlock HorizontalAlignment="Left" Margin="193,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FF91F500" Width="120" Height="23" FontWeight="Bold" FontFamily="Segoe UI Black" TextAlignment="Center" Foreground="Black" OpacityMask="#FF801010" FontSize="14" TextDecorations="Underline" Text="Peso"/>
+        <TextBox x:Name="anni" HorizontalAlignment="Left" Height="23" Margin="193,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="altezza" HorizontalAlignment="Left" Height="23" Margin="193,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="peso" HorizontalAlignment="Left" Height="23" Margin="193,315,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="nome" HorizontalAlignment="Left" Height="23" Margin="193,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <RadioButton x:Name="superumano" Content="Mago" HorizontalAlignment="Left" Margin="37,213,0,0" VerticalAlignment="Top" OpacityMask="#FFFF0F0F" BorderBrush="#FFFF0606" Foreground="Black" FontWeight="Bold" FontFamily="Segoe UI Black"  Height="27" Width="128" FontSize="16" Checked="superumano_Checked"/>
+        <Button x:Name="Vai_Avanti" Content="Vai Avanti" HorizontalAlignment="Center" Margin="532,215,64,0" VerticalAlignment="Top" Width="196" Height="61" BorderBrush="#FFB49A9A" RenderTransformOrigin="0.443,-0.905" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="Black" OpacityMask="#FF801010" Click="Vai_Avanti_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF91F500" Offset="0.56"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Margin="488,19,0,0" TextWrapping="Wrap" Text="Sintesi:" VerticalAlignment="Top" Background="#FF91F500" Width="120" Height="23" FontWeight="Bold" FontFamily="Segoe UI Black" TextAlignment="Center" Foreground="Black" OpacityMask="#FF801010" FontSize="14" TextDecorations="Underline"/>
+        <Rectangle HorizontalAlignment="Left" Height="217" Margin="318,121,0,0" Stroke="White" VerticalAlignment="Top" Width="7" Fill="#FF91F500"/>
+        <Rectangle HorizontalAlignment="Left" Height="384" Margin="753,25,0,0" Stroke="White" VerticalAlignment="Top" Width="5" Fill="#FF91F500"/>
+        <Rectangle HorizontalAlignment="Left" Height="384" Margin="10,25,0,0" Stroke="White" VerticalAlignment="Top" Width="5" Fill="#FF91F500"/>
+        <Rectangle HorizontalAlignment="Left" Height="217" Margin="181,121,0,0" Stroke="White" VerticalAlignment="Top" Width="7" Fill="#FF91F500"/>
+        <Rectangle HorizontalAlignment="Left" Height="384" Margin="478,25,0,0" Stroke="White" VerticalAlignment="Top" Width="5" Fill="#FF91F500"/>
+        <Rectangle HorizontalAlignment="Left" Height="10" Margin="532,281,0,0" Stroke="White" VerticalAlignment="Top" Width="196" Fill="#FF91F500"/>
+        <RadioButton x:Name="orco" Content="Orco" HorizontalAlignment="Left" Margin="37,240,0,0" VerticalAlignment="Top" OpacityMask="#FFFF0F0F" BorderBrush="#FFFF0606" Foreground="Black" FontWeight="Bold" FontFamily="Segoe UI Black"  Height="27" Width="128" FontSize="16" Checked="orco_Checked"/>
+        <RadioButton x:Name="IbridoAnimale" Content="Ibrido Animale" HorizontalAlignment="Left" Margin="37,267,0,0" VerticalAlignment="Top" OpacityMask="#FFFF0F0F" BorderBrush="#FFFF0606" Foreground="Black" FontWeight="Bold" FontFamily="Segoe UI Black"  Height="27" Width="139" FontSize="16" Checked="IbridoAnimale_Checked"/>
+        <TextBlock HorizontalAlignment="Left" Margin="330,121,0,0" TextWrapping="Wrap" Text="Appartenenza" VerticalAlignment="Top" Background="#FF91F500" Width="120" Height="23" FontWeight="Bold" FontFamily="Segoe UI Black" TextAlignment="Center" Foreground="Black" OpacityMask="#FF801010" FontSize="14" TextDecorations="Underline"/>
+
+        <CheckBox x:Name="volante1" Content="Volante" HorizontalAlignment="Left" Margin="330,158,0,0" VerticalAlignment="Top" Height="18" Width="85" FontWeight="Bold" FontFamily="Segoe UI Black" FontSize="16"/>
+        <CheckBox x:Name="Marino" Content="Marino" HorizontalAlignment="Left" Margin="330,181,0,0" VerticalAlignment="Top" Height="18" Width="85" FontWeight="Bold" FontFamily="Segoe UI Black" FontSize="16"/>
+        <Rectangle x:Name="rectangle" HorizontalAlignment="Left" Height="99" Margin="330,121,0,0" Stroke="White" VerticalAlignment="Top" Width="130" Fill="#FF91F500"/>
+        <Rectangle x:Name="rect2" HorizontalAlignment="Left" Height="255" Margin="29,114,0,0" Stroke="White" VerticalAlignment="Top" Width="431">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF91F500" Offset="0"/>
+                    <GradientStop Color="#FF91F500" Offset="1"/>
+                    <GradientStop Color="#FF91F500" Offset="0.535"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="rect3" HorizontalAlignment="Left" Height="226" Margin="37,130,0,0" Stroke="White" VerticalAlignment="Top" Width="413" Fill="Black"/>
+        <Rectangle x:Name="rect4" HorizontalAlignment="Left" Height="180" Margin="63,158,0,0" Stroke="White" VerticalAlignment="Top" Width="352" Fill="#FF91F500"/>
+
+    </Grid>
+</Window>
+
+    
